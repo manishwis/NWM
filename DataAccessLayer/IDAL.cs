@@ -6,12 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    class GoalDAL: DAL
+    interface IDAL
     {
-       void AddNewGoal()
-        {
-            _misContext.Goals.Add();
-            _misContext.SaveChanges();
-        }
     }
 }

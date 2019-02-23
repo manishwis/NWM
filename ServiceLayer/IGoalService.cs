@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ServiceLayer
 {
-    interface IGoalService
+   public interface IGoalService
     {
-
+        void GetAllGoals();
+        void GetGoalById(int id);
+        void AddNewGoal();
+        void UpdateGoal();
+        void RemoveGoal(int id);
+        void GetGoalByName(string name);
     }
 }

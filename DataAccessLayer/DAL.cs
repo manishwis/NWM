@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    class GoalDAL: DAL
+    class DAL
     {
-       void AddNewGoal()
+        protected MISContext _misContext;
+        public DAL()
         {
-            _misContext.Goals.Add();
-            _misContext.SaveChanges();
+            _misContext = new MISContext();
         }
+
     }
 }

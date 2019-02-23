@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
@@ -13,5 +14,6 @@ namespace DataAccessLayer
         {
 
         }
+        public virtual DbSet<Goal>Goals { get; set; }
     }
 }
