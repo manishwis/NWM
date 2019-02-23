@@ -72,6 +72,7 @@ namespace MIS.Controllers
             {
                 return View(model);
             }
+            returnUrl = "/Admin/Goal";
 
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true

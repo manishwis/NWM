@@ -1,6 +1,7 @@
+using MIS.Controllers;
 using System;
-
 using Unity;
+using Unity.Injection;
 
 namespace MIS
 {
@@ -36,6 +37,7 @@ namespace MIS
         /// </remarks>
         public static void RegisterTypes(IUnityContainer container)
         {
+            container.RegisterType<AccountController>(new InjectionConstructor());
             // NOTE: To load from web.config uncomment the line below.
             // Make sure to add a Unity.Configuration to the using statements.
             // container.LoadConfiguration();
