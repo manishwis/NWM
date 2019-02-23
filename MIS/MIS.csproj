@@ -217,9 +217,24 @@
     <Compile Include="App_Start\UnityConfig.cs" />
     <Compile Include="App_Start\UnityMvcActivator.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\ActivityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ActivityYearlyController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AuditController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DepartmentController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FinanceYearController.cs" />
     <Compile Include="Areas\Admin\Controllers\GoalController.cs" />
+    <Compile Include="Areas\Admin\Controllers\MissionPeriodController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ProposalController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ReportingPersopnController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
+    <Compile Include="Areas\Admin\Controllers\StrageryController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TargetUnitController.cs" />
+    <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\Admin\Models\Goal.cs" />
+    <Compile Include="Areas\Reports\Controllers\ReportController.cs" />
     <Compile Include="Areas\Reports\ReportsAreaRegistration.cs" />
+    <Compile Include="Areas\Users\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Users\Controllers\QuarterlyActivityController.cs" />
     <Compile Include="Areas\Users\UsersAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -252,6 +267,7 @@
     <Content Include="Areas\Admin\Views\_ViewStart.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Admin\Views\Goal\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Goal\Create.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -301,11 +317,24 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\ViewModels\" />
-    <Folder Include="Areas\Reports\Controllers\" />
+    <Folder Include="Areas\Admin\Views\ActivityYearly\" />
+    <Folder Include="Areas\Admin\Views\Activity\" />
+    <Folder Include="Areas\Admin\Views\Audit\" />
+    <Folder Include="Areas\Admin\Views\Department\" />
+    <Folder Include="Areas\Admin\Views\FinanceYear\" />
+    <Folder Include="Areas\Admin\Views\MissionPeriod\" />
+    <Folder Include="Areas\Admin\Views\Proposal\" />
+    <Folder Include="Areas\Admin\Views\ReportingPersopn\" />
+    <Folder Include="Areas\Admin\Views\Role\" />
+    <Folder Include="Areas\Admin\Views\Stragery\" />
+    <Folder Include="Areas\Admin\Views\TargetUnit\" />
+    <Folder Include="Areas\Admin\Views\User\" />
     <Folder Include="Areas\Reports\Models\" />
+    <Folder Include="Areas\Reports\Views\Report\" />
     <Folder Include="Areas\Reports\Views\Shared\" />
-    <Folder Include="Areas\Users\Controllers\" />
     <Folder Include="Areas\Users\Models\" />
+    <Folder Include="Areas\Users\Views\Home\" />
+    <Folder Include="Areas\Users\Views\QuarterlyActivity\" />
     <Folder Include="Areas\Users\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>

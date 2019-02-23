@@ -19,6 +19,8 @@
                 </button>
             </div>
             <div class="navbar-collapse collapse">
+                @Html.ActionLink("Edit Profile", "Index", "Manage")
+                @Html.ActionLink("Change Password", "ChangePassword", "Manage")
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
@@ -27,7 +29,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - </p>
         </footer>
     </div>
 

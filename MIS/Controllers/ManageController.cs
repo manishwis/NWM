@@ -7,6 +7,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using MIS.Models;
+using Unity;
 
 namespace MIS.Controllers
 {
@@ -15,7 +16,7 @@ namespace MIS.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-
+        [InjectionConstructor()]
         public ManageController()
         {
         }
